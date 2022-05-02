@@ -2,7 +2,7 @@
 Roaming Jets
 By Crito @Vanaheim Gaming Servers
 https://discord.gg/WEFzqPa
-v1.3 3/26/2022
+v1.4 4/30/2022
 */
 
 class CfgPatches

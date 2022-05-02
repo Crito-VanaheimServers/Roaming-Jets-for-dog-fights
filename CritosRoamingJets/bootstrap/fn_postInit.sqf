@@ -2,7 +2,7 @@
 Roaming Jets
 By Crito @Vanaheim Gaming Servers
 https://discord.gg/WEFzqPa
-v1.3 3/26/2022
+v1.4 4/30/2022
 */
 if (!isServer) exitWith {};
 
@@ -16,6 +16,6 @@ publicVariable "RJ_liveJetsArray";
 
 missionNamespace setVariable [format ["LastJetSpawnedAt"], 0];
 
-	[120, Critos_RoamingJetsStart, [], true] call ExileServer_system_thread_addtask;
+	[120, critosRoamingJetsStart, [], true] call ExileServer_system_thread_addtask;
 
-"PostInit finished" call Critos_Roaming_Jets_Logging;
+"PostInit finished" call critosRoamingJetsLogging;

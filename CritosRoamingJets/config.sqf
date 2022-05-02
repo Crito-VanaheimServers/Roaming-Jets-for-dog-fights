@@ -2,27 +2,27 @@
 Roaming Jets
 By Crito @Vanaheim Gaming Servers
 https://discord.gg/WEFzqPa
-v1.3 3/26/2022
+v1.4 4/30/2022
 */
 
 RJSpawnTime = 10;									//Delay between spawning each jet on server start.
 
-RJMaxJets = 5;										//Max number of jets to have on server at the same time.
+RJMaxJets = 3;										//Max number of jets to have on server at the same time.
 
 RJJetAISide = EAST;									//Side The AI should be on.
 
-RJSearchDist = 3500;								//max radius the AI jet will search for a suitable target.			
+RJSearchDist = 4000;								//max radius the AI jet will search for a suitable target.			
 
-RJRespect = 1000;									//Respect payout to player for destroying jet.
+RJRespect = 300;									//Respect payout to player for destroying jet.
 													//If jet only gets damaged and crahing to ground is what destroys it the player does not get respect.
 				
-RJprizechance = 40;									//number from 0 to 100, represents % chance for enemy jet to spawn loot crate when shot down. Set to 0 if you do not want prizes.
+RJprizechance = 35;									//number from 0 to 100, represents % chance for enemy jet to spawn loot crate when shot down. Set to 0 if you do not want prizes.
 
 RJcash = 500000;									//max ammount of tabs to spawn in prize crate. random number selected from 0 to RJcash number.
 
 RJgunsAmount = 10;									//max number of guns to spawn in loot crate.
 
-RJitemAmount = 3;									//max number of items to spawn in loot crate.
+RJitemAmount = 2;									//max number of items to spawn in loot crate.
 
 RJ_Plane = [										//list of jets for system to choose from. 			
 				"B_Plane_Fighter_01_F",				
@@ -108,7 +108,9 @@ RJLootItems = 	[									//lits of possible items to spawn in loot crate chosen 
 											"Exile_Item_Magazine03",
 											"Laserdesignator_01_khk_F",
 											"Exile_Item_CodeLock",
+											"B_Static_Designator_01_F",
 											"Laserdesignator_02_ghex_F",
+											"O_Static_Designator_02_F",
 											"Exile_Item_Beer",
 											"ToolKit",
 											"Exile_Item_Magazine04",
