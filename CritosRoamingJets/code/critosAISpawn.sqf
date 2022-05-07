@@ -43,10 +43,6 @@ _RJunit addHeadgear "H_PilotHelmetFighter_B";
 _RJunit addWeapon "hgun_Rook40_F";
 _RJunit addmagazines ["16Rnd_9x21_Mag",4];
 _RJunit addBackpack "B_Parachute";
-_RJunit setBehaviour "CARELESS";		 
-_RJunit disableAI "AUTOCOMBAT";
-_RJunit disableAI "AUTOTARGET";
-_RJunit disableAI "TARGET";
 
 [_RJunit] joinSilent _RJGroup;
 

@@ -5,13 +5,12 @@ https://discord.gg/WEFzqPa
 v1.4 4/30/2022
 */
 
-private ["_RJVictim","_RJKiller","_RJInstigator","_RJKillerUID","_RJKillerRespect","_RJKillMSG","_RJprizepos","_RJcoords","_RJprize","_RJChute",
+private ["_RJVictim","_RJKiller","_RJInstigator","_InstigatorUID","_RJKillerRespect","_RJKillMSG","_RJprizepos","_RJcoords","_RJprize","_RJChute",
 		 "_RJsmoke","_RJflare","_RJStrobe","_RJprizecash","_RJGuns","_RJmagazines","_RJitems","_RJRepIncrease"];
 
 _RJvictim = _this select 0;
-_RJKiller = _this select 1;
 _RJInstigator = _this select 2;
-_RJKillerUID = getPlayerUID _RJInstigator;
+_InstigatorUID = getPlayerUID _RJInstigator;
 
 if ((!isNull _RJInstigator) && (isplayer _RJInstigator)) then
 	{
@@ -21,7 +20,7 @@ if ((!isNull _RJInstigator) && (isplayer _RJInstigator)) then
 		_RJKillerRespect = _RJKillerRespect + _RJRepIncrease;
 		_RJInstigator setVariable ["ExileScore",_RJKillerRespect];
 		[_RJInstigator, "showFragRequest", [_RJKillMSG]] call ExileServer_system_network_send_to;
-		format["setAccountScore:%1:%2", _RJKillerRespect, _RJKillerUID] call ExileServer_system_database_query_fireAndForget;
+		format["setAccountScore:%1:%2", _RJKillerRespect, _InstigatorUID] call ExileServer_system_database_query_fireAndForget;
 		ExileClientPlayerScore = _RJKillerRespect;
 		(owner _RJInstigator) publicVariableClient "ExileClientPlayerScore";
 		ExileClientPlayerScore = nil;

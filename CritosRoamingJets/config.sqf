@@ -5,7 +5,7 @@ https://discord.gg/WEFzqPa
 v1.4 4/30/2022
 */
 
-RJSpawnTime = 10;									//Delay between spawning each jet on server start.
+RJSpawnTime = 60;									//Delay between spawning each jet on server start.
 
 RJMaxJets = 3;										//Max number of jets to have on server at the same time.
 
@@ -110,7 +110,6 @@ RJLootItems = 	[									//lits of possible items to spawn in loot crate chosen 
 											"Exile_Item_CodeLock",
 											"B_Static_Designator_01_F",
 											"Laserdesignator_02_ghex_F",
-											"O_Static_Designator_02_F",
 											"Exile_Item_Beer",
 											"ToolKit",
 											"Exile_Item_Magazine04",
