@@ -18,4 +18,5 @@ Fixed issue found when players are dog fighting jets and another player was clos
 due to having the enemy jets change combat modes. All combat mode changes were removed and recoded to force the enemy jet only target the nearest
 plane to its location and nothing else. This allows players to dog fight anywhere and other players to not have to worry about getting attacked 
 while dog fight is in process if they are in a heli or on ground. These jets should not target anything but a player plane no matter what unless
-planes are not blacklisted in config than it target a plane any plane.
+planes are not blacklisted in config than it target a plane any plane. This Version also has respect payout fix where players respect was getting
+reset.
